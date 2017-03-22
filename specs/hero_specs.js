@@ -15,5 +15,8 @@ describe('The Hero', function () {
   });
   it("hero should have a favorite food of chicken", function(){
     assert.equal("Chicken", hero.favoriteFood);
+  });
+  it("hero should talk and say his name", function(){
+    assert.equal("Hello, my name is Colin", hero.speak());
   })
 })
