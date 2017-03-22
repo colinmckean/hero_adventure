@@ -11,6 +11,6 @@ describe('Food', function () {
     assert.equal("Chicken", food.food_name);
   });
   it("food should have a replenishment value", function(){
-    assert.equal(10, food.replenishment_value)
+    assert.equal(10, food.replenishment_value);
   })
 });
