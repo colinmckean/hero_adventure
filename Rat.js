@@ -1,10 +1,8 @@
-Rat = function(){
-
+Rat = function () {
 }
 
 Rat.prototype = {
-  touch: function(food){
-
+  touch: function (food) {
     food.replenishment_value = (-food.replenishment_value);
   }
 }

@@ -7,10 +7,10 @@ beforeEach(function () {
   var rat;
 });
 
-describe('Rat does rat stuff', function(){
+describe('The Rat', function () {
   rat = new Rat();
   beef = new Food("Beef", 20);
-  it('should touch food',function(){
+  it('should touch food and make it toxic',function () {
     rat.touch(beef)
     assert.equal(beef.replenishment_value, -20);
   });
