@@ -8,6 +8,12 @@ Hero = function(name, health, favoriteFood) {
 Hero.prototype = {
   speak: function(){
     return "Hello, my name is " + this.name;
+  },
+  eat: function(food){
+    if(food.food_name == this.favoriteFood){
+      this.health += (food.replenishment_value * 1.5);
+    return "I have eaten " + food.food_name;
+  }
   }
 }
 

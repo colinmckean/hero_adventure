@@ -21,9 +21,14 @@ describe('The Hero', function () {
   it("hero should talk and say his name", function(){
     assert.equal("Hello, my name is Colin", hero.speak());
   });
-  it("Hero can eat to increase health", function(){
+  it("should get a increased health boost if favorite food", function(){
     food = new Food("Chicken", 10);
     hero.eat(food)
     assert.equal(115, hero.health);
-  })
-})
+  });
+  it("Hero will get a standard health boost if food is not favorite food", function(){
+    fooda = new Food("Rabbit Food", 10);
+    hero.eat(fooda);
+    assert.equal(125, hero.health);
+  });
+});
