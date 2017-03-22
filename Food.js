@@ -1,6 +1,6 @@
-Food = function(food_name, health_value){
+Food = function(food_name, replenishment_value){
   this.food_name = food_name;
-  this.health_value = health_value;
+  this.replenishment_value = replenishment_value;
 }
 
 module.exports = Food;
