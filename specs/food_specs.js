@@ -7,7 +7,7 @@ beforeEach(function () {
 
 describe('Food', function () {
   food = new Food("Chicken", 10);
-  it("hero should have a name of Colin", function () {
-    assert.equal("Colin", hero.name);
+  it("Food should have a name of Chicken", function () {
+    assert.equal("Chicken", food.food_name);
   });
 });
