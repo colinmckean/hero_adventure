@@ -10,4 +10,7 @@ describe('Food', function () {
   it("Food should have a name of Chicken", function () {
     assert.equal("Chicken", food.food_name);
   });
+  it("food should have a replenishment value", function(){
+    assert.equal(10, food.replenishment_value)
+  })
 });
